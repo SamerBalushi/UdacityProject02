@@ -1,0 +1,68 @@
+<!DOCTYPE >
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Manipulating the DOM</title>
+  <!-- Load Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap" rel="stylesheet">  <!-- Load Styles -->
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+  <!-- HTML Follows BEM naming conventions 
+  IDs are only used for sections to connect menu achors to sections -->
+  <header class="page__header">
+    <nav class="navbar__menu">
+      <!-- Navigation starts as empty UL that will be populated with JS -->
+      <ul id="navbar__list"></ul>
+    </nav>
+  </header>
+  <main>
+    <header class="main__hero">
+      <h1>Aircraft Commercial Manufacturers</h1>
+    </header>
+    <!-- Each Section has an ID (used for the anchor) and 
+    a data attribute that will populate the li node.
+    Adding more sections will automatically populate nav.
+    The first section is set to active class by default -->
+    <section id="section1" data-nav="Boeing" class="your-active-class">
+      <div class="landing__container">
+        <h2>Boeing</h2>
+        <p>Founded in 1916, Boeing is one of the world's largest and most renowned aircraft manufacturers. The company has produced numerous iconic aircraft, including the Boeing 747, 777, and 787. Boeing has played a significant role in shaping commercial aviation and defense sectors.</p>
+
+        <p>The company's product portfolio includes a wide range of aircraft, from small regional jets to wide-body airliners, such as the iconic Boeing 747 and the fuel-efficient 787 Dreamliner. In addition to commercial aircraft, Boeing also specializes in military aircraft, satellites, missiles, and various defense systems. Boeing's commitment to innovation, safety, and reliability has made it a preferred choice for airlines and defense organizations worldwide.</p>
+      </div>
+    </section>
+    <section id="section2" data-nav="Airbus">
+      <div class="landing__container">
+        <h2>Airbus</h2>
+        <p> Established in 1970, Airbus is a European aircraft manufacturer and a major competitor to Boeing. The company's notable aircraft models include the A320, A380, and A350. Airbus is known for its advanced technology and fuel-efficient designs.</p>
+
+        <p>The company's primary focus is on designing, manufacturing, and marketing commercial aircraft. Airbus has a diverse product lineup that caters to different market segments, including single-aisle aircraft like the A320 family, twin-aisle aircraft like the A350 XWB, and the world's largest commercial aircraft, the A380. The company's commitment to fuel efficiency, environmental sustainability, and passenger comfort has driven its success in the aviation industry.</p>
+      </div>
+    </section>
+    <section id="section3" data-nav="Embrear">
+      <div class="landing__container">
+        <h2>Embrear</h2>
+        <p>
+          Embraer, formally known as Embraer S.A., is a Brazilian aerospace conglomerate that specializes in the design, development, production, and support of commercial, military, and executive aircraft. Established in 1969, Embraer has grown to become one of the world's leading aircraft manufacturers.</p>
+
+        <p>Embraer's product portfolio encompasses a range of aircraft models. In the commercial aviation sector, the company offers the E-Jet family, which includes the E170, E175, E190, and E195 models. These regional jets are designed for short to medium-haul flights and are widely used by airlines around the world, including major carriers and regional operators.</p>
+      </div>
+    </section>
+  
+    <section id="section4" data-nav="Comac">
+      <div class="landing__container">
+   <h2>Comac</h2>
+   <p>COMAC, short for Commercial Aircraft Corporation of China, Ltd., is a state-owned aerospace manufacturer in China. Established in 2008, COMAC focuses on the development, production, and marketing of commercial aircraft. The company aims to compete with established aircraft manufacturers like Boeing and Airbus in the global aviation industry.</p>
+   <p>One of COMAC's key projects is the development of passenger aircraft, namely the C919. The C919 is a narrow-body jet designed to compete with the Boeing 737 and Airbus A320 families. It is intended for both domestic and international markets and aims to capture a significant share of the growing aviation industry in China.</p>
+  </section>
+
+  </main>
+  <footer class="page__footer">
+    <p>&copy Udacity</p>
+  </footer>
+<script src="js/app.js"></script>
+</body>
+</html>
